@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.1.2/buzz.min.js"></script>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="id_1" src="img/1.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="id_2" src="img/2.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="id_3" src="img/3.jpg" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="id_4" src="img/4.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="id_5" src="img/5.jPG" height="200" width="200"/></div>
+            <div class="image-container"><img id="id_6" src="img/6.jpg" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="id_7" src="img/7.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="id_8" src="img/8.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="id_9" src="img/9.jpg" height="200" width="200"/></div>
+        </div>
+        
+    </body>
+    
+</html>
+
+<script>
+    const sound1 = new buzz.sound ("Sounds/a.mp3")
+    const sound2 = new buzz.sound ("Sounds/b.mp3")
+    const sound3 = new buzz.sound ("Sounds/c.wav")
+    const sound4 = new buzz.sound ("Sounds/d.mp3")
+    const sound5 = new buzz.sound ("Sounds/e.mp3")
+    const sound6 = new buzz.sound ("Sounds/f.mp3")
+    const sound7 = new buzz.sound ("Sounds/i.wav")
+    const sound8 = new buzz.sound ("Sounds/h.mp3")
+    const sound9 = new buzz.sound ("Sounds/g.mp3")
+
+
+    window.onload = () => {
+        document.getElementById ("id_1")
+            .onpointerdown = () => {
+                console.log (`playing ${ sound1 }`)
+                sound1.play ()
+            }
+        document.getElementById ("id_2")
+            .onpointerdown = () => sound2.play ()
+        document.getElementById ("id_3")
+            .onpointerdown = () => sound3.play ()
+            document.getElementById ("id_4")
+            .onpointerdown = () => sound4.play ()
+        document.getElementById ("id_5")
+            .onpointerdown = () => sound5.play ()
+            document.getElementById ("id_6")
+            .onpointerdown = () => sound6.play ()
+        document.getElementById ("id_7")
+            .onpointerdown = () => sound7.play ()
+            document.getElementById ("id_8")
+            .onpointerdown = () => sound8.play ()
+        document.getElementById ("id_9")
+            .onpointerdown = () => sound9.play ()
+    }
+</script>
